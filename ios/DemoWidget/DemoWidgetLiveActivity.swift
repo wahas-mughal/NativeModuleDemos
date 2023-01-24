@@ -1,6 +1,6 @@
 //
-//  Demo_widgetLiveActivity.swift
-//  Demo widget
+//  DemoWidgetLiveActivity.swift
+//  DemoWidget
 //
 //  Created by MAC on 23/01/2023.
 //
@@ -9,7 +9,7 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct Demo_widgetAttributes: ActivityAttributes {
+struct DemoWidgetAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var value: Int
@@ -19,9 +19,9 @@ struct Demo_widgetAttributes: ActivityAttributes {
     var name: String
 }
 
-struct Demo_widgetLiveActivity: Widget {
+struct DemoWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: Demo_widgetAttributes.self) { context in
+        ActivityConfiguration(for: DemoWidgetAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
                 Text("Hello")

@@ -1,6 +1,6 @@
 //
-//  Demo_widget.swift
-//  Demo widget
+//  DemoWidget.swift
+//  DemoWidget
 //
 //  Created by MAC on 23/01/2023.
 //
@@ -40,7 +40,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct Demo_widgetEntryView : View {
+struct DemoWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -48,21 +48,21 @@ struct Demo_widgetEntryView : View {
     }
 }
 
-struct Demo_widget: Widget {
-    let kind: String = "Demo_widget"
+struct DemoWidget: Widget {
+    let kind: String = "DemoWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            Demo_widgetEntryView(entry: entry)
+            DemoWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct Demo_widget_Previews: PreviewProvider {
+struct DemoWidget_Previews: PreviewProvider {
     static var previews: some View {
-        Demo_widgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        DemoWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
