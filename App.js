@@ -1,126 +1,61 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
-import type {Node} from 'react';
+import React, {useState} from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  NativeModules,
-  TouchableOpacity,
   View,
+  TextInput,
+  StyleSheet,
+  NativeModules,
+  Platform,
 } from 'react-native';
+import SharedGroupPreferences from 'react-native-shared-group-preferences';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+const group = 'group.asap';
 
-const Section = ({children, title, onPress}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+const SharedStorage = NativeModules.SharedStorage;
+
+const App = () => {
+  const [text, setText] = useState('');
+  const widgetData = {
+    text,
+  };
+
+  const handleSubmit = async () => {
+    try {
+      // iOS
+      await SharedGroupPreferences.setItem('widgetKey', widgetData, group);
+    } catch (error) {
+      console.log({error});
+    }
+    // Android
+    if (Platform.OS === 'android' && Platform.Version > 1) {
+      SharedStorage.set(JSON.stringify({text}));
+    }
+  };
+
   return (
-    <View style={styles.sectionContainer}>
-      <TouchableOpacity onPress={onPress}>
-        <Text
-          style={[
-            styles.sectionTitle,
-            {
-              color: isDarkMode ? Colors.white : Colors.black,
-            },
-          ]}>
-          {title}
-        </Text>
-      </TouchableOpacity>
-
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View style={styles.container}>
+      <TextInput
+        style={styles.input}
+        onChangeText={newText => setText(newText)}
+        value={text}
+        returnKeyType="send"
+        onEndEditing={handleSubmit}
+        placeholder="Enter the text to display..."
+      />
     </View>
   );
 };
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  console.log('NATIVE MODULE', NativeModules);
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section
-            title="addEvent"
-            onPress={() => {
-              NativeModules.RNHello.addEvent('Hello World', 'MAC');
-            }}></Section>
-          <Section
-            title="Native Alert"
-            onPress={() => {
-              NativeModules.RNHello.giveAlerts(res => {
-                alert(res);
-              });
-            }}>
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+export default App;
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
+  container: {
+    marginTop: '50%',
     paddingHorizontal: 24,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  input: {
+    width: '100%',
+    borderBottomWidth: 1,
+    fontSize: 20,
+    minHeight: 40,
   },
 });
-
-export default App;

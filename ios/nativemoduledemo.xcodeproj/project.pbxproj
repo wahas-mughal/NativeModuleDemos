@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* nativemoduledemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativemoduledemoTests.m */; };
 		04F04938297DC96C000C0AE6 /* RNHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F04937297DC96C000C0AE6 /* RNHello.m */; };
-		04F0493F297DDF4B000C0AE6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0493E297DDF4B000C0AE6 /* WidgetKit.framework */; };
-		04F04941297DDF4B000C0AE6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F04940297DDF4B000C0AE6 /* SwiftUI.framework */; };
-		04F04944297DDF4B000C0AE6 /* Demo_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F04943297DDF4B000C0AE6 /* Demo_widgetBundle.swift */; };
-		04F04946297DDF4B000C0AE6 /* Demo_widgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F04945297DDF4B000C0AE6 /* Demo_widgetLiveActivity.swift */; };
-		04F04948297DDF4B000C0AE6 /* Demo_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F04947297DDF4B000C0AE6 /* Demo_widget.swift */; };
-		04F0494B297DDF4E000C0AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0494A297DDF4E000C0AE6 /* Assets.xcassets */; };
-		04F0494D297DDF4E000C0AE6 /* Demo_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04F04949297DDF4B000C0AE6 /* Demo_widget.intentdefinition */; };
-		04F0494E297DDF4E000C0AE6 /* Demo_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04F04949297DDF4B000C0AE6 /* Demo_widget.intentdefinition */; };
-		04F04951297DDF4E000C0AE6 /* Demo widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 04F0493D297DDF4B000C0AE6 /* Demo widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04F47950297EC69D00DD9FC8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0493E297DDF4B000C0AE6 /* WidgetKit.framework */; };
+		04F47951297EC69D00DD9FC8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F04940297DDF4B000C0AE6 /* SwiftUI.framework */; };
+		04F47954297EC69D00DD9FC8 /* DemoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47953297EC69D00DD9FC8 /* DemoWidgetBundle.swift */; };
+		04F47956297EC69D00DD9FC8 /* DemoWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47955297EC69D00DD9FC8 /* DemoWidgetLiveActivity.swift */; };
+		04F47958297EC69D00DD9FC8 /* DemoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F47957297EC69D00DD9FC8 /* DemoWidget.swift */; };
+		04F4795B297EC6A000DD9FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F4795A297EC6A000DD9FC8 /* Assets.xcassets */; };
+		04F4795D297EC6A000DD9FC8 /* DemoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04F47959297EC69D00DD9FC8 /* DemoWidget.intentdefinition */; };
+		04F4795E297EC6A000DD9FC8 /* DemoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04F47959297EC69D00DD9FC8 /* DemoWidget.intentdefinition */; };
+		04F47961297EC6A000DD9FC8 /* DemoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 04F4794F297EC69D00DD9FC8 /* DemoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0C80B921A6F3F58F76C31292 /* libPods-nativemoduledemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-nativemoduledemo.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -34,12 +34,12 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = nativemoduledemo;
 		};
-		04F0494F297DDF4E000C0AE6 /* PBXContainerItemProxy */ = {
+		04F4795F297EC6A000DD9FC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 04F0493C297DDF4B000C0AE6;
-			remoteInfo = "Demo widgetExtension";
+			remoteGlobalIDString = 04F4794E297EC69D00DD9FC8;
+			remoteInfo = DemoWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				04F04951297DDF4E000C0AE6 /* Demo widgetExtension.appex in Embed Foundation Extensions */,
+				04F47961297EC6A000DD9FC8 /* DemoWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,17 +61,19 @@
 		00E356EE1AD99517003FC87E /* nativemoduledemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nativemoduledemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* nativemoduledemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nativemoduledemoTests.m; sourceTree = "<group>"; };
+		04C74E6F297FFE9B009A1784 /* DemoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoWidgetExtension.entitlements; sourceTree = "<group>"; };
 		04F04936297DC96C000C0AE6 /* RNHello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNHello.h; sourceTree = "<group>"; };
 		04F04937297DC96C000C0AE6 /* RNHello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNHello.m; sourceTree = "<group>"; };
-		04F0493D297DDF4B000C0AE6 /* Demo widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Demo widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F0493E297DDF4B000C0AE6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		04F04940297DDF4B000C0AE6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		04F04943297DDF4B000C0AE6 /* Demo_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_widgetBundle.swift; sourceTree = "<group>"; };
-		04F04945297DDF4B000C0AE6 /* Demo_widgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_widgetLiveActivity.swift; sourceTree = "<group>"; };
-		04F04947297DDF4B000C0AE6 /* Demo_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_widget.swift; sourceTree = "<group>"; };
-		04F04949297DDF4B000C0AE6 /* Demo_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Demo_widget.intentdefinition; sourceTree = "<group>"; };
-		04F0494A297DDF4E000C0AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04F0494C297DDF4E000C0AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F47949297EB74F00DD9FC8 /* nativemoduledemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = nativemoduledemo.entitlements; path = nativemoduledemo/nativemoduledemo.entitlements; sourceTree = "<group>"; };
+		04F4794F297EC69D00DD9FC8 /* DemoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DemoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F47953297EC69D00DD9FC8 /* DemoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWidgetBundle.swift; sourceTree = "<group>"; };
+		04F47955297EC69D00DD9FC8 /* DemoWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		04F47957297EC69D00DD9FC8 /* DemoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWidget.swift; sourceTree = "<group>"; };
+		04F47959297EC69D00DD9FC8 /* DemoWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DemoWidget.intentdefinition; sourceTree = "<group>"; };
+		04F4795A297EC6A000DD9FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F4795C297EC6A000DD9FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* nativemoduledemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nativemoduledemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = nativemoduledemo/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = nativemoduledemo/AppDelegate.mm; sourceTree = "<group>"; };
@@ -97,12 +99,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04F0493A297DDF4B000C0AE6 /* Frameworks */ = {
+		04F4794C297EC69D00DD9FC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F04941297DDF4B000C0AE6 /* SwiftUI.framework in Frameworks */,
-				04F0493F297DDF4B000C0AE6 /* WidgetKit.framework in Frameworks */,
+				04F47951297EC69D00DD9FC8 /* SwiftUI.framework in Frameworks */,
+				04F47950297EC69D00DD9FC8 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,22 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		04F04942297DDF4B000C0AE6 /* Demo widget */ = {
+		04F47952297EC69D00DD9FC8 /* DemoWidget */ = {
 			isa = PBXGroup;
 			children = (
-				04F04943297DDF4B000C0AE6 /* Demo_widgetBundle.swift */,
-				04F04945297DDF4B000C0AE6 /* Demo_widgetLiveActivity.swift */,
-				04F04947297DDF4B000C0AE6 /* Demo_widget.swift */,
-				04F04949297DDF4B000C0AE6 /* Demo_widget.intentdefinition */,
-				04F0494A297DDF4E000C0AE6 /* Assets.xcassets */,
-				04F0494C297DDF4E000C0AE6 /* Info.plist */,
+				04F47953297EC69D00DD9FC8 /* DemoWidgetBundle.swift */,
+				04F47955297EC69D00DD9FC8 /* DemoWidgetLiveActivity.swift */,
+				04F47957297EC69D00DD9FC8 /* DemoWidget.swift */,
+				04F47959297EC69D00DD9FC8 /* DemoWidget.intentdefinition */,
+				04F4795A297EC6A000DD9FC8 /* Assets.xcassets */,
+				04F4795C297EC6A000DD9FC8 /* Info.plist */,
 			);
-			path = "Demo widget";
+			path = DemoWidget;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* nativemoduledemo */ = {
 			isa = PBXGroup;
 			children = (
+				04F47949297EB74F00DD9FC8 /* nativemoduledemo.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				04F04936297DC96C000C0AE6 /* RNHello.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -184,10 +187,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				04C74E6F297FFE9B009A1784 /* DemoWidgetExtension.entitlements */,
 				13B07FAE1A68108700A75B9A /* nativemoduledemo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* nativemoduledemoTests */,
-				04F04942297DDF4B000C0AE6 /* Demo widget */,
+				04F47952297EC69D00DD9FC8 /* DemoWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -202,7 +206,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* nativemoduledemo.app */,
 				00E356EE1AD99517003FC87E /* nativemoduledemoTests.xctest */,
-				04F0493D297DDF4B000C0AE6 /* Demo widgetExtension.appex */,
+				04F4794F297EC69D00DD9FC8 /* DemoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,21 +246,21 @@
 			productReference = 00E356EE1AD99517003FC87E /* nativemoduledemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04F0493C297DDF4B000C0AE6 /* Demo widgetExtension */ = {
+		04F4794E297EC69D00DD9FC8 /* DemoWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04F04952297DDF4E000C0AE6 /* Build configuration list for PBXNativeTarget "Demo widgetExtension" */;
+			buildConfigurationList = 04F47962297EC6A000DD9FC8 /* Build configuration list for PBXNativeTarget "DemoWidgetExtension" */;
 			buildPhases = (
-				04F04939297DDF4B000C0AE6 /* Sources */,
-				04F0493A297DDF4B000C0AE6 /* Frameworks */,
-				04F0493B297DDF4B000C0AE6 /* Resources */,
+				04F4794B297EC69D00DD9FC8 /* Sources */,
+				04F4794C297EC69D00DD9FC8 /* Frameworks */,
+				04F4794D297EC69D00DD9FC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Demo widgetExtension";
-			productName = "Demo widgetExtension";
-			productReference = 04F0493D297DDF4B000C0AE6 /* Demo widgetExtension.appex */;
+			name = DemoWidgetExtension;
+			productName = DemoWidgetExtension;
+			productReference = 04F4794F297EC69D00DD9FC8 /* DemoWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		13B07F861A680F5B00A75B9A /* nativemoduledemo */ = {
@@ -276,7 +280,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				04F04950297DDF4E000C0AE6 /* PBXTargetDependency */,
+				04F47960297EC6A000DD9FC8 /* PBXTargetDependency */,
 			);
 			name = nativemoduledemo;
 			productName = nativemoduledemo;
@@ -294,13 +298,14 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1410;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
-					04F0493C297DDF4B000C0AE6 = {
+					04F4794E297EC69D00DD9FC8 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -319,7 +324,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* nativemoduledemo */,
 				00E356ED1AD99517003FC87E /* nativemoduledemoTests */,
-				04F0493C297DDF4B000C0AE6 /* Demo widgetExtension */,
+				04F4794E297EC69D00DD9FC8 /* DemoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -332,11 +337,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04F0493B297DDF4B000C0AE6 /* Resources */ = {
+		04F4794D297EC69D00DD9FC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F0494B297DDF4E000C0AE6 /* Assets.xcassets in Resources */,
+				04F4795B297EC6A000DD9FC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,14 +513,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04F04939297DDF4B000C0AE6 /* Sources */ = {
+		04F4794B297EC69D00DD9FC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F04948297DDF4B000C0AE6 /* Demo_widget.swift in Sources */,
-				04F0494D297DDF4E000C0AE6 /* Demo_widget.intentdefinition in Sources */,
-				04F04944297DDF4B000C0AE6 /* Demo_widgetBundle.swift in Sources */,
-				04F04946297DDF4B000C0AE6 /* Demo_widgetLiveActivity.swift in Sources */,
+				04F47958297EC69D00DD9FC8 /* DemoWidget.swift in Sources */,
+				04F4795D297EC6A000DD9FC8 /* DemoWidget.intentdefinition in Sources */,
+				04F47954297EC69D00DD9FC8 /* DemoWidgetBundle.swift in Sources */,
+				04F47956297EC69D00DD9FC8 /* DemoWidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,8 +528,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F4795E297EC6A000DD9FC8 /* DemoWidget.intentdefinition in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				04F0494E297DDF4E000C0AE6 /* Demo_widget.intentdefinition in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				04F04938297DC96C000C0AE6 /* RNHello.m in Sources */,
 			);
@@ -538,10 +543,10 @@
 			target = 13B07F861A680F5B00A75B9A /* nativemoduledemo */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
-		04F04950297DDF4E000C0AE6 /* PBXTargetDependency */ = {
+		04F47960297EC6A000DD9FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04F0493C297DDF4B000C0AE6 /* Demo widgetExtension */;
-			targetProxy = 04F0494F297DDF4E000C0AE6 /* PBXContainerItemProxy */;
+			target = 04F4794E297EC69D00DD9FC8 /* DemoWidgetExtension */;
+			targetProxy = 04F4795F297EC6A000DD9FC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -551,6 +556,7 @@
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-nativemoduledemo-nativemoduledemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -569,7 +575,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nativemoduledemo.app/nativemoduledemo";
+				SWIFT_OBJC_BRIDGING_HEADER = "nativemoduledemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nativemoduledemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nativemoduledemo";
 			};
 			name = Debug;
 		};
@@ -578,6 +587,7 @@
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-nativemoduledemo-nativemoduledemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = nativemoduledemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -593,11 +603,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nativemoduledemo.app/nativemoduledemo";
+				SWIFT_OBJC_BRIDGING_HEADER = "nativemoduledemoTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nativemoduledemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nativemoduledemo";
 			};
 			name = Release;
 		};
-		04F04953297DDF4E000C0AE6 /* Debug */ = {
+		04F47963297EC6A000DD9FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -608,24 +620,31 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DemoWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NEH7LACRUQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Demo widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Demo widget";
+				INFOPLIST_FILE = DemoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Demo Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.nativemoduledemo.Demo-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.nativemoduledemo.DemoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -636,7 +655,7 @@
 			};
 			name = Debug;
 		};
-		04F04954297DDF4E000C0AE6 /* Release */ = {
+		04F47964297EC6A000DD9FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -647,24 +666,31 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DemoWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NEH7LACRUQ;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Demo widget/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Demo widget";
+				INFOPLIST_FILE = DemoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Demo Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MARKETING_VERSION = 1.0.1;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.nativemoduledemo.Demo-widget";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.nativemoduledemo.DemoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -682,13 +708,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nativemoduledemo/nativemoduledemo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NEH7LACRUQ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = nativemoduledemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Demo Widget";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -696,6 +726,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = nativemoduledemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "Widget/nativemoduledemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -709,12 +740,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nativemoduledemo/nativemoduledemo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NEH7LACRUQ;
 				INFOPLIST_FILE = nativemoduledemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Demo Widget";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -722,6 +757,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = nativemoduledemo;
+				SWIFT_OBJC_BRIDGING_HEADER = "Widget/nativemoduledemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -874,11 +910,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04F04952297DDF4E000C0AE6 /* Build configuration list for PBXNativeTarget "Demo widgetExtension" */ = {
+		04F47962297EC6A000DD9FC8 /* Build configuration list for PBXNativeTarget "DemoWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04F04953297DDF4E000C0AE6 /* Debug */,
-				04F04954297DDF4E000C0AE6 /* Release */,
+				04F47963297EC6A000DD9FC8 /* Debug */,
+				04F47964297EC6A000DD9FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
